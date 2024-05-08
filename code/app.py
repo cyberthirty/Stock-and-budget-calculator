@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 
+st.set_page_config(page_title="Stock and Budget Calculator", page_icon="📈", layout="wide")
+
 def load_stock_data(ticker):
     stock = yf.Ticker(ticker)
     hist = stock.history(period="1mo")
