@@ -21,7 +21,7 @@ def budget_calculator():
     balance = income - expenses
     st.write(f"Monthly Balance: ${balance:.2f}")
 
-st.sidebar.title('Navigation')
+st.sidebar.title('Menu')
 options = st.sidebar.radio('Select a tool:', ['Stock Data', 'Budget Calculator'])
 
 if options == 'Stock Data':
