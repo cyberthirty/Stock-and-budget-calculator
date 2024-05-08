@@ -25,8 +25,8 @@ def budget_calculator():
 
 def math_calculator():
     st.subheader('Math Calculator')
-    num1 = st.number_input('Enter first number', key="num1")
-    num2 = st.number_input('Enter second number', key="num2")
+    num1 = st.number_input('Enter number', key="num1")
+    num2 = st.number_input('Enter number', key="num2")
     operation = st.selectbox('Choose operation', ['Add', 'Subtract', 'Multiply', 'Divide'])
 
     if st.button('Calculate'):
